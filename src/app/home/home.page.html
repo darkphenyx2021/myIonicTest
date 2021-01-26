@@ -1,0 +1,277 @@
+<ion-split-pane content-id="content">
+
+  <ion-menu content-id="content">
+    <ion-content color="primary">
+      <ion-item button detail="false" lines="none" color="primary">
+        <ion-label>
+          <ion-icon name="home-outline"></ion-icon><br />
+          Home
+        </ion-label>
+      </ion-item>
+
+      <ion-item button detail="false" lines="none" color="primary">
+        <ion-label>
+          <ion-icon name="create-outline"></ion-icon><br />
+          New Claim
+        </ion-label>
+      </ion-item>
+
+      <ion-item button detail="false" lines="none" color="secondary">
+        <ion-label>
+          <ion-icon name="document-text-outline"></ion-icon><br />
+          My Claims
+        </ion-label>
+      </ion-item>
+
+      <ion-item button detail="false" lines="none" color="primary">
+        <ion-label>
+          <ion-icon name="person-outline"></ion-icon><br />
+          My Coverage
+        </ion-label>
+      </ion-item>
+
+      <ion-item button detail="false" lines="none" color="primary">
+        <ion-label>
+          <ion-icon name="chatbox-outline"></ion-icon><br />
+          Contact Us
+        </ion-label>
+      </ion-item>
+
+      <ion-item button detail="false" lines="none" color="primary">
+        <ion-label>
+          <ion-icon name="mail-outline"></ion-icon><br />
+          Messages
+        </ion-label>
+      </ion-item>
+
+
+    </ion-content>
+  </ion-menu>
+
+  <div class="ion-page" id="content">
+    <ion-header>
+      <div class="mobile">
+        <ion-toolbar>
+          <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+          <ion-title>Header</ion-title>
+
+          <ion-buttons slot="end">
+            <ion-button slot="icon-only">
+              <ion-icon name="chatbox-outline"></ion-icon>
+            </ion-button>
+
+            <ion-button slot="icon-only">
+              <ion-icon name="search-outline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </div>
+      <div class="desktop">
+        <ion-toolbar>
+          <div class="logo">LOGO</div>
+
+          <div class="account">
+            <ion-item lines="none" class="ion-text-left">
+              <ion-icon slot="start" name="chatbox-outline"></ion-icon>
+              <ion-label>Chat Us</ion-label>
+            </ion-item>
+
+            <ion-item lines="none" class="ion-text-left">
+              <ion-icon slot="end" name="chevron-down-outline"></ion-icon>
+              <ion-label>English</ion-label>
+            </ion-item>
+
+            <ion-item lines="none">
+              <ion-icon slot="end" name="chevron-down-outline"></ion-icon>
+              <ion-label>Liam</ion-label>
+            </ion-item>
+          </div>
+
+          <div class="search">
+            <ion-searchbar></ion-searchbar>
+          </div>
+        </ion-toolbar>
+      </div>
+    </ion-header>
+
+    <ion-content>
+      <div class="page">
+        <div class="page__top">
+          <div class="page__top-left">
+            <div class="page__top-left-container">
+              <ion-icon name="alert-circle" color="danger"></ion-icon>
+              <ion-text color="danger" class="page__alert">Needs more information</ion-text>
+            </div>
+            <p class="page__top-text">
+              <ion-text color="dark">
+                We need a little more info to process the below claim. If you’ve already provided something, please stay tuned for an updated status.
+              </ion-text>
+            </p>
+          </div>
+          <div class="page__top-right">
+
+          </div>
+        </div>
+        <div class="page__info">
+          <div>
+            <ion-text color="dark"><h2 class="page__claim-title">ER Visit for Joshua</h2></ion-text>
+            <ion-button fill="clear" class="page__cta" color="primary">Edit claim name</ion-button>
+          </div>
+          <div class="page__info-bottom">
+            <ion-button fill="clear" size="small" class="page__cta next">MANAGE ALERTS</ion-button>
+            <ion-text class="page__info-text" color="dark">Claim #12345</ion-text>
+            <ion-text class="page__info-text" color="dark">Joshua Fair</ion-text>
+            <ion-text class="page__info-text" color="dark">Filed: 03/20/2020</ion-text>
+            <ion-text class="page__info-text" color="dark">Incident Date: 03/20/2020</ion-text>
+          </div>
+        </div>
+        <div class="page__needs">
+          <ion-card class="page__notification">
+            <ion-icon name="alert-circle" color="danger"></ion-icon>
+            <ion-text color="danger" class="page__alert">Needs more information</ion-text>
+          </ion-card>
+          <div class="page__notification-info">
+            <ion-text color="dark"><h3 class="page__notification-title">Here's what we need</h3></ion-text>
+            <ion-text color="dark"><p class="page__top-text">There are the documents or actions needed to complete your claim</p></ion-text>
+            <ion-text color="primary"><h4 class="page__documentation">DOCUMENTATION</h4></ion-text>
+            <ion-text color="dark"><p class="page__top-text">Please upload the following documents:</p></ion-text>
+          </div>
+          <ion-card class="page__info-card">
+            <ion-grid class="page__info-card-left">
+              <ion-row>
+                <ion-col size="5">
+                  <ion-row>
+                    <ion-col size="12" class="page__info-card-alerts">
+                      <ion-card-title class="page__info-card-left-alert">
+                        <ion-icon name="alert-circle" color="danger"></ion-icon>
+                        <ion-text class="page__left-heading" color="primary">Hospital Bill or UB04 form</ion-text>
+                      </ion-card-title>
+                      <ion-card-subtitle>
+                        An itemized hospital bill or a UB04 form that includes the hospital billing information.
+                      </ion-card-subtitle>
+                      <ion-button fill="clear" size="small" class="page__cta info">View More</ion-button>
+                    </ion-col>
+                    <ion-col size="12" class="page__info-card-alerts">
+                      <ion-card-title class="page__info-card-left-alert">
+                        <ion-icon name="alert-circle" color="danger"></ion-icon>
+                        <ion-text class="page__left-heading" color="primary">X-Ray Report</ion-text>
+                      </ion-card-title>
+                      <ion-card-subtitle>
+                        We need the x-ray report from your provider.
+                      </ion-card-subtitle>
+                      <ion-button fill="clear" size="small" class="page__cta info">View More</ion-button>
+                    </ion-col>
+                    <ion-col size="12" class="page__info-card-cta">
+                      <ion-button fill="outline" expand="block" size="large">
+                        <ion-text class="page__info-card-cta-text">Attach Documents</ion-text>
+                        <ion-icon slot="end" name="add-outline" class="page__info-card-cta-icon"></ion-icon>
+                      </ion-button>
+                      <ion-button fill="outline" expand="block" size="large">
+                        <ion-text class="page__info-card-cta-text">Take Picture of Documents</ion-text>
+                        <ion-icon slot="end" name="add-outline" class="page__info-card-cta-icon"></ion-icon>
+                      </ion-button>
+                    </ion-col>
+                  </ion-row>
+                </ion-col>
+                <ion-col size="1"></ion-col>
+                <ion-col size="6">
+                  <ion-card class="page__upload-card">
+                    <ion-card-content class="page__upload-card-text">
+                      <p>No Files Attached</p>
+                    </ion-card-content>
+                    <ion-button expand="block" color="medium" class="page__upload-card-cta">Medium</ion-button>
+                  </ion-card>
+                </ion-col>
+              </ion-row>
+              <ion-row>
+                <ion-col size="12">
+                  <ion-button fill="clear" size="small" class="page__cta">File size tips</ion-button>
+                </ion-col>
+                <ion-col size="12">
+                  <div class="separator"></div>
+                </ion-col>
+                <ion-col size="12">
+                  <ion-text class="page__card-document-heading" color="primary">Documents you've uploaded</ion-text>
+                  <ion-card-title class="page__card-documents-uploaded">
+                    <ion-icon name="documents-sharp" color="tertiary"></ion-icon>
+                    <ion-text class="page__card-documents-uploaded-name" color="dark">Physicians_Diagnosis.PDF</ion-text>
+                    <ion-text class="page__card-documents-uploaded-size" color="dark"> (456K)</ion-text>
+                  </ion-card-title>
+                  <ion-text color="dark" class="page__card-documents-uploaded-date">Uploaded on 03/25/2020 1:00PM ET</ion-text>
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card>
+        </div>
+      </div>
+
+      <!--<div class="cards">
+        <div class="col">
+          <ion-card class="size-medium">
+            <ion-card-header>
+              <ion-card-title>My Title</ion-card-title>
+            </ion-card-header>
+
+            <ion-card-content>
+              My Content
+            </ion-card-content>
+          </ion-card>
+
+          <ion-card class="size-large">
+            <ion-card-header>
+              <ion-card-title>My Title</ion-card-title>
+            </ion-card-header>
+
+            <ion-card-content>
+              My Content
+            </ion-card-content>
+          </ion-card>
+
+          <ion-card class="size-small">
+            <ion-card-header>
+              <ion-card-title>My Title</ion-card-title>
+            </ion-card-header>
+
+            <ion-card-content>
+              My Content
+            </ion-card-content>
+          </ion-card>
+        </div>
+        <div class="col">
+          <ion-card class="size-large">
+            <ion-card-header>
+              <ion-card-title>My Title</ion-card-title>
+            </ion-card-header>
+
+            <ion-card-content>
+              My Content
+            </ion-card-content>
+          </ion-card>
+
+          <ion-card class="size-small">
+            <ion-card-header>
+              <ion-card-title>My Title</ion-card-title>
+            </ion-card-header>
+
+            <ion-card-content>
+              My Content
+            </ion-card-content>
+          </ion-card>
+
+          <ion-card class="size-medium">
+            <ion-card-header>
+              <ion-card-title>My Title</ion-card-title>
+            </ion-card-header>
+
+            <ion-card-content>
+              My Content
+            </ion-card-content>
+          </ion-card>
+        </div>
+      </div>-->
+    </ion-content>
+  </div>
+
+</ion-split-pane>
