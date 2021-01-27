@@ -248,13 +248,14 @@ ion-header .desktop .search {
     letter-spacing: 0.5px;
   }
   &__upload-card {
+    align-items: center;
     justify-content: center;
     display: flex;
     height: 100%;
-    width: 100%;
+    margin: 0;
 
     &-cta {
-
+      margin: 0;
     }
   }
 }
